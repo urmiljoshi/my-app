@@ -4,6 +4,7 @@ class ClassBasedDemo extends Component {
 
     constructor(props) {
         super(props);
+
         this.state ={
             cityName :'surat'
         }    
@@ -13,17 +14,18 @@ class ClassBasedDemo extends Component {
         this.setState({
            cityName :'Baroda' 
         })
+        // console.log("changecity");
     }
     
     render() {
         return (
             <div>
                 <p>{this.state.cityName}</p>
-                <button>onclick = {() => this.changecity}</button>
+                <button onClick = {() => this.changecity()}>changecity</button>
             </div>
         );
     }
-    jkkgkukfffkutcjjjhhnh
+    
 }
 
 export default ClassBasedDemo;
