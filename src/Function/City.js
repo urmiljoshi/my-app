@@ -11,6 +11,9 @@ function City(props) {
     }
     return (
         <div>
+            {
+                    props.Country_name === 'india' ? <p>Taj mahal</p> : <p>London Eye</p>
+            }
             <p>{cityName}</p>
             <button onClick ={() => changeCity()}>changeity</button>
         </div>

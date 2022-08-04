@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import City from './City';
 
 function Country(props) {
 
@@ -13,6 +14,8 @@ function Country(props) {
         <div>
             <p>{CountryName}</p>
             <button onClick ={() => changeCountry()}>changeCountry</button>
+            <City Country_name ={CountryName} />
+
         </div>
     );
 }
