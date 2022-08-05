@@ -7,6 +7,7 @@ function Course(props) {
 
     const changeCourse = () => {
         setCourseName ('Node');
+        
     }
 
     

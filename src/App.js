@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 //import City from './Function/City';
  //import Country from './Function/Country';
 import Course from './Function/Course';
+import Time from './Function/Time';
 // import Fees from './Function/Fees';
 
 
@@ -14,8 +15,9 @@ function App(props) {
       {/* <Country/> */}
       {/* <City/>  */}
      {/* <Country/> */}
-     <Course />
+     {/* <Course /> */}
      {/* <Fees /> */}
+     <Time />
     </div>
   );
 }
