@@ -18,8 +18,22 @@ class Time extends Component {
     //3.sent reqvest to a servar for data.
 
     componentDidMount =() => {
-        setInterval (() => this.tike (),1000)
+        this.time = setInterval (() => this.tike (),1000)
     }
+    
+//4. Whenevar Previonvs state or Props is Updatad then it is calld .
+
+componentDidUpdate = (prevProps,prevState) => {
+    if (prevState.Time !== this.state.Time) {
+        console.log("componetDidUpdate");
+    }
+}
+
+//5.Whenevar We Move to another component then it is Callad .it Releuse Resources.
+
+componentWillUnmount = () => {
+    clearInterval (this.Time);
+}
 
     //2.Disply on the scren .whenever sate value changed render method is called
     render() {
