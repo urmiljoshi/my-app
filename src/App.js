@@ -3,8 +3,9 @@ import React, { Component } from 'react';
 // import Country from './container/Country';
 //import City from './Function/City';
  //import Country from './Function/Country';
-import Course from './Function/Course';
-import Time from './Function/Time';
+// import Course from './Function/Course';
+// import Time from './Function/Time';
+import TimeFun from './Function/TimeFun';
 // import Fees from './Function/Fees';
 
 
@@ -17,7 +18,8 @@ function App(props) {
      {/* <Country/> */}
      {/* <Course /> */}
      {/* <Fees /> */}
-     <Time />
+     {/* <Time /> */}
+     <TimeFun />
     </div>
   );
 }
